@@ -32,7 +32,8 @@
                 <br/>
                 <h:commandButton value="submit"
                                  actionListener="#{captchaBean.submit}">
-                    <f:setPropertyActionListener target="#{captchaBean.random}" value="${imageBean.random}" />
+                    <f:setPropertyActionListener target="#{captchaBean.random}" 
+                                                 value="${imageBean.random}" />
                 </h:commandButton>
                 <h:commandButton value="reload"
                                  actionListener="#{imageBean.reload}">
