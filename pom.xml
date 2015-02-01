@@ -110,6 +110,7 @@
                         <version>${my.maven.war}</version>
                         <configuration>
                             <outputDirectory>deployments</outputDirectory>
+                            <warName>ROOT</warName>
                         </configuration>
                     </plugin>
                 </plugins>
