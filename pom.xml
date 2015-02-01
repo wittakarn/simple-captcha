@@ -69,60 +69,6 @@
                     </archive>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <inherited>true</inherited>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>${my.maven.resources}</version>
-                <executions>
-                    <execution>
-                        <id>copy-resources</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>
-                                ${basedir}/target/classes
-                            </outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>
-                                        ${basedir}/src/main/webapp
-                                    </directory>
-                                    <includes>
-                                        <include>**/*</include>
-                                    </includes>
-                                    <excludes>
-                                        <exclude>WEB-INF/**</exclude>
-                                    </excludes>
-                                    <targetPath>
-                                        /META-INF/resources
-                                    </targetPath>
-                                </resource>
-
-                                <resource>
-                                    <directory>src/main/resources</directory>
-                                    <filtering>true</filtering>
-                                </resource>
-
-                                <resource>
-                                    <directory>
-                                        ${basedir}/src/main/webapp/WEB-INF
-                                    </directory>
-                                    <includes>
-                                        <include>
-                                            faces-config.xml
-                                        </include>
-                                    </includes>
-                                    <targetPath>/META-INF</targetPath>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
