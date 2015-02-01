@@ -88,12 +88,12 @@
             <version>${my.org.primefaces}</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
+        <!--dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.faces</artifactId>
             <version>${my.mojarra}</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency-->
     </dependencies>
     
     <profiles>
