@@ -53,21 +53,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${my.maven.war}</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <attachClasses>true</attachClasses>
-                    <archiveClasses>true</archiveClasses>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>
-                                true
-                            </addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>
-                                true
-                            </addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
             </plugin>
         </plugins>
     </build>
